@@ -1,6 +1,5 @@
 package com.volvocars.voiceinputapplication
 
-import android.app.assist.AssistContent
 import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
@@ -43,12 +42,14 @@ class MainActivity : AppCompatActivity() {
 
     private fun Intent.handleIntent() {
         when (action) {
-            Intent.ACTION_VIEW -> doAction()
+            Intent.ACTION_VIEW -> doAction(data)
         }
     }
 
-    private fun doAction() {
-        val param = intent?.extras?.getString("featureParam")
+    private fun doAction(data: Uri?) {
+        val param = intent?.extras?.getString("feature")
+        val featureRequested = data?.getQueryParameter("feature")
+
         param.let {
             when (it?.lowercase(Locale.ROOT)) {
                 LOCK_ACTION -> navigateToLock()

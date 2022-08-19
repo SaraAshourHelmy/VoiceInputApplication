@@ -1,8 +1,8 @@
 <resources>
-    <array name="lockSynonyms">
+    <string-array name="lockSynonyms">
         <item>Lock</item>
         <item>Close</item>
-    </array>
+    </string-array>
 
     <array name="unlockSynonyms">
         <item>Unlock</item>

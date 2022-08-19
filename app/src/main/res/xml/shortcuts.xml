@@ -9,7 +9,7 @@
         <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
             <parameter-binding
                 android:key="feature"
-                android:value="featureParam" />
+                android:value="@array/lockSynonyms" />
         </capability-binding>
     </shortcut>
 
@@ -20,7 +20,7 @@
             android:targetPackage="com.volvocars.voiceinputapplication">
             <parameter
                 android:name="feature"
-                android:key="featureParam" />
+                android:key="feature" />
         </intent>
     </capability>
 
