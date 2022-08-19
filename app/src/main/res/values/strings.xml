@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">VoiceInputApplication</string>
+    <string name="lock_action">Lock</string>
+    <string name="unlock_action">Unlock</string>
+</resources>

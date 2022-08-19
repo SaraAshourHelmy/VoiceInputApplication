@@ -1,0 +1,27 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- For Lock car  -->
+    <shortcut
+        android:shortcutId="lock"
+        android:shortcutShortLabel="@string/lock_action"
+        tools:ignore="UnusedAttribute">
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding
+                android:key="feature"
+                android:value="featureParam" />
+        </capability-binding>
+    </shortcut>
+
+    <capability android:name="actions.intent.OPEN_APP_FEATURE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.volvocars.voiceinputapplication.MainActivity"
+            android:targetPackage="com.volvocars.voiceinputapplication">
+            <parameter
+                android:name="feature"
+                android:key="featureParam" />
+        </intent>
+    </capability>
+
+</shortcuts>

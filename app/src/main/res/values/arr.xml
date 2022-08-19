@@ -1,0 +1,11 @@
+<resources>
+    <array name="lockSynonyms">
+        <item>Lock</item>
+        <item>Close</item>
+    </array>
+
+    <array name="unlockSynonyms">
+        <item>Unlock</item>
+        <item>Open</item>
+    </array>
+</resources>
